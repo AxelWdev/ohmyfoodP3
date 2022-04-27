@@ -191,15 +191,4 @@ header p {
   color: #7E7E7E;
   margin: 0 1.5rem 0 0.5rem;
 }
-
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background-color: red;
-}
 /*# sourceMappingURL=main.css.map */
