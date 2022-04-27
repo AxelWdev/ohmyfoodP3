@@ -12,3 +12,11 @@
             transform: translate(-50%, -50%);
         }
 }
+
+@mixin btn {
+    padding: 1rem;
+    margin: 1rem;
+    color: $colour-white;
+    background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
+    border-radius: 2rem;
+}
