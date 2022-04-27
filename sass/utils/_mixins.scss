@@ -20,3 +20,10 @@
     background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
     border-radius: 2rem;
 }
+
+
+@mixin styled-break {
+    width: 100px;
+    height: 10px;
+    background-color: $colour-tertiary;
+}
