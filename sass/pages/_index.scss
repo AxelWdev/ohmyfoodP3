@@ -1,0 +1,56 @@
+.fonctionnement {
+    margin: $layout-margin;
+    padding: $layout-padding;
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    .fonct-container {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .fonct-card {
+        display: flex;
+        align-items: center;
+        width: 360px;
+        max-width: 373px;
+        padding: 1.8rem;
+        margin: 0.5rem 1rem 0.5rem 1rem; 
+        background: $colour-lightgrey;
+        border-radius: 1.4rem;
+        box-shadow: 0px 10px 10px rgba($colour-mediumgrey ,0.3);
+        position: relative;
+
+        &--active {
+            background: $colour-primary-light;
+            i {
+                color: $colour-primary;
+            }
+        }
+
+        span {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            padding-top: 6px;
+            background-color: $colour-primary;
+            border-radius: 50%;
+            text-align: center;
+            color: $colour-white;
+            position: absolute;
+            left: -12px;
+            top: 1.8rem;
+        }
+        
+        &__pre {
+            color: $colour-mediumgrey;
+            margin: 0 1.5rem 0 0.5rem;
+            
+            
+        }
+    
+    }
+}

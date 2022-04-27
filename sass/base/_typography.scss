@@ -13,12 +13,28 @@ a {
     color: inherit;
 }
 
+
 ul li {
     list-style-type: none;
     padding-left: 0;
 }
 
+header p {
+    font-weight: 100;
+}
+
+.fonctionnement{
+    i {
+    font-size: 1.3rem;
+    }
+
+    p {
+        font-weight: 500;
+    }
+}
+
 .footer__heading {
     font-family: 'Shrikhand', cursive;
     font-weight:100;
+    
 }

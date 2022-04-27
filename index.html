@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/normalize.css">
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Oh my food</title>
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="header">
             <div class="header__logo">
                 <img src="./public/img/ohmyfood.png" alt="">
             </div>
@@ -26,35 +26,38 @@
                 <div class="header-card__body">
                     <h2 class="header-card__title">Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                </div>
-                <div class="btn">Explorez nos restaurants</div>
+                    <div class="btn">Explorez nos restaurants</div>
+                </div> 
             </div>
         </header>
 
         <main>
             <section class="fonctionnement">
-                <div class="fonct-card">
-                    <div class="font-card__number"><span>1</span></div>
-                    <div class="fonct-card__pre">
-                        <i class="fas fa-mobile-android-alt"></i></div>
-                    <div class="fonct-card__desc">
-                        <p>Choisissez un restaurant</p>
+                <h2 class="fonctionnement__title">Fonctionnement</h2>
+                <div class="fonct-container">
+                    <div class="fonct-card">
+                        <div class="font-card__number"><span>1</span></div>
+                        <div class="fonct-card__pre">
+                            <i class="fas fa-mobile-android-alt"></i></div>
+                        <div class="fonct-card__desc">
+                            <p>Choisissez un restaurant</p>
+                        </div>
                     </div>
-                </div>
-                <div class="fonct-card">
-                    <div class="font-card__number"><span>2</span></div>
-                    <div class="fonct-card__pre">
-                        <i class="fas fa-list"></i></div>
-                    <div class="fonct-card__desc">
-                        <p>Composez votre menu</p>
+                    <div class="fonct-card">
+                        <div class="font-card__number"><span>2</span></div>
+                        <div class="fonct-card__pre">
+                            <i class="fas fa-list"></i></div>
+                        <div class="fonct-card__desc">
+                            <p>Composez votre menu</p>
+                        </div>
                     </div>
-                </div>
-                <div class="fonct-card">
-                    <div class="font-card__number"><span>3</span></div>
-                    <div class="fonct-card__pre">
-                        <i class="fas fa-store"></i></div>
-                    <div class="fonct-card__desc">
-                        <p>Dégustez au restaurant</p>
+                    <div class="fonct-card fonct-card--active">
+                        <div class="font-card__number"><span>3</span></div>
+                        <div class="fonct-card__pre">
+                            <i class="fas fa-store"></i></div>
+                        <div class="fonct-card__desc">
+                            <p>Dégustez au restaurant</p>
+                        </div>
                     </div>
                 </div>
             </section>
