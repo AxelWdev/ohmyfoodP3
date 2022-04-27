@@ -1,41 +1,52 @@
-.header{
+.fonctionnement {
+    margin: $layout-margin;
+    padding: $layout-padding;
+    display: flex;
+    flex-direction: column;
 
-    &__logo {
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    .fonct-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .fonct-card {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin: 1em;
-            img {
-                width: 220px;
-            } 
-    }
+        width: 360px;
+        max-width: 373px;
+        padding: 1.8rem;
+        margin: 0.5rem 1rem 0.5rem 1rem; 
+        background: $colour-lightgrey;
+        border-radius: 1.4rem;
+        box-shadow: 0px 10px 10px rgba($colour-mediumgrey ,0.3);
+        position: relative;
 
-    &-card {
-        &__location {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 1rem;
-            background: linear-gradient(180deg, rgba($colour-mediumgrey ,0.5) 0%, rgba($colour-grey ,1) 10%);
 
-        }
-
-        &__body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        span {
+            display: inline-block;
+            width: 28px;
+            height: 28px;
+            padding-top: 6px;
+            background-color: $colour-primary;
+            border-radius: 50%;
             text-align: center;
-            padding: 3rem;
-            background: $colour-lightgrey;
-
+            color: $colour-white;
+            position: absolute;
+            left: -12px;
+            top: 1.8rem;
         }
-
-        &__title {
-            margin-bottom: 1rem;
-        }
-
         
+        &__pre {
+            color: $colour-mediumgrey;
+            margin: 0 1.5rem 0 0.5rem;
+            
+            
+        }
+    
     }
 }
-    

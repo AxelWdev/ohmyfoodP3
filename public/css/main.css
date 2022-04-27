@@ -33,6 +33,18 @@ ul li {
   padding-left: 0;
 }
 
+header p {
+  font-weight: 100;
+}
+
+.fonctionnement i {
+  font-size: 1.3rem;
+}
+
+.fonctionnement p {
+  font-weight: 500;
+}
+
 .footer__heading {
   font-family: 'Shrikhand', cursive;
   font-weight: 100;
@@ -48,12 +60,6 @@ ul li {
 
 .btn:hover {
   cursor: pointer;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 100%;
 }
 
 .header__logo {
@@ -109,6 +115,82 @@ ul li {
 
 .header-card__title {
   margin-bottom: 1rem;
+}
+
+.header-card p {
+  font-weight: 100;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.fonctionnement {
+  margin: 2rem 0 1rem 0;
+  padding: 2rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fonctionnement__title {
+  margin-bottom: 1rem;
+}
+
+.fonctionnement .fonct-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonctionnement .fonct-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  max-width: 373px;
+  padding: 1.8rem;
+  margin: 0.5rem 1rem 0.5rem 1rem;
+  background: #F6F6F6;
+  border-radius: 1.4rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
+          box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
+  position: relative;
+}
+
+.fonctionnement .fonct-card span {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  padding-top: 6px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  left: -12px;
+  top: 1.8rem;
+}
+
+.fonctionnement .fonct-card__pre {
+  color: #7E7E7E;
+  margin: 0 1.5rem 0 0.5rem;
 }
 
 footer ul {
