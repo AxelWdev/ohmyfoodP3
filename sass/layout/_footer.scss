@@ -1,0 +1,28 @@
+.footer {
+    background-color: $colour-darkgrey;
+    color: $colour-white;
+    padding: 1rem;
+
+    &__heading {
+        margin-bottom: 1rem;
+    }
+
+    &__list-item {
+        display: flex;
+        flex-direction: column;
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        i {
+            display: inline-block;
+            width: 20px;
+        }
+
+        span {
+            padding-left: 1rem;
+            font-weight: 500;
+        }
+    }
+}

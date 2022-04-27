@@ -131,6 +131,40 @@ header p {
   font-weight: 100;
 }
 
+.footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 1rem;
+}
+
+.footer__heading {
+  margin-bottom: 1rem;
+}
+
+.footer__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__list-item li {
+  margin-bottom: 0.5rem;
+}
+
+.footer__list-item i {
+  display: inline-block;
+  width: 20px;
+}
+
+.footer__list-item span {
+  padding-left: 1rem;
+  font-weight: 500;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1440px;
@@ -138,7 +172,7 @@ header p {
 }
 
 .fonctionnement {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
   padding: 2.5rem 1rem 2rem 1rem;
 }
 
@@ -153,6 +187,9 @@ header p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -203,7 +240,7 @@ header p {
 }
 
 .restaurants {
-  margin: 2rem 0 1rem 0;
+  margin: 2rem 0 0 0;
   padding: 2.5rem 1rem 2rem 1rem;
   background-color: #F6F6F6;
   display: -webkit-box;
