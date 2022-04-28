@@ -19,6 +19,14 @@ ul li {
     padding-left: 0;
 }
 
+i {
+    color: $colour-darkgrey;
+}
+
+footer i {
+    color: $colour-white;
+}
+
 header p {
     font-weight: 100;
 }
@@ -47,4 +55,12 @@ header p {
     font-family: 'Shrikhand', cursive;
     font-weight:100;
     
+}
+
+.menu p {
+    font-weight: 100;
+}
+
+strong {
+    font-weight: 700;
 }

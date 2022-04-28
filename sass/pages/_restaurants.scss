@@ -1,0 +1,107 @@
+.nav {
+    &__link {
+        position :absolute;
+        top: 23px;
+        left: 30px;
+        font-size: 1.3rem;
+    }
+}
+
+.header {
+    &-image {
+        
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+         img  {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            max-width: 100%;
+           
+            }
+
+    }
+}
+
+.restaurant-main {
+    margin-bottom: $restaurant-translateY;
+}
+
+.menu-container {
+    
+    padding: 2rem 1rem;
+    transform: translateY($restaurant-translateY);
+    background-color: $colour-lightgrey;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+
+    &__heart {
+        position: absolute;
+        top: 3rem;
+        right: 50px; 
+    }
+
+    .menu {
+
+        .menu-card-container {
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+            justify-content: center;
+        }
+        margin-top: 2rem;
+
+        &__type {
+            text-transform: uppercase;
+        } 
+
+        &-card {
+            display: flex;
+            justify-content: space-between;
+            background-color: $colour-white;
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            width: 100%; 
+            max-width: 400px;
+            box-shadow: $box-shadow;
+
+            &__desc {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 85%;
+                h3 {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    
+                }
+                p {
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+ 
+            }
+                
+            
+
+            &__price {
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+                width: 10%;
+            }
+        } 
+    }
+    .btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+}
+    

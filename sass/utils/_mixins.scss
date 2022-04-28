@@ -16,14 +16,38 @@
 @mixin btn {
     padding: 1rem;
     margin: 1rem;
+    width: auto;
+    min-width: 200px;
+    text-align: center;
     color: $colour-white;
     background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
     border-radius: 2rem;
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(169deg, rgba(lighten($colour-secondary, 5%) ,1) 0%, rgba(lighten($colour-primary, 5%) ,1) 90%);
+        
+
+    }
+   
+
 }
 
 
 @mixin styled-break {
-    width: 100px;
-    height: 10px;
+    width: 40px;
+    height: 3px;
+    margin: 5px 0;
     background-color: $colour-tertiary;
+}
+
+@mixin media-tablet{
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-desktop {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
 }
