@@ -1,0 +1,50 @@
+.nav {
+    &__link {
+        position :absolute;
+        top: 23px;
+        left: 30px;
+        font-size: 1.3rem;
+    }
+}
+
+.header {
+    &-image {
+        
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+         img  {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: auto;
+            max-width: 100%;
+           
+            }
+
+    }
+}
+
+.menu-container {
+    
+    padding: 2rem 1rem;
+    transform: translateY(-45px);
+    background-color: $colour-lightgrey;
+    border-radius: 50px 50px 0 0;
+    position: relative;
+
+    &__heart {
+        position: absolute;
+        top: 3rem;
+        right: 50px; 
+    }
+
+    .menu {
+        margin-top: 2rem;
+        &__type {
+            text-transform: uppercase;
+        } 
+    }
+}
+    
