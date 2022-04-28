@@ -26,3 +26,29 @@
         }
     }
 }
+
+@include media-tablet {
+    .footer {
+        &__list-item {
+            
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 75%;
+            
+            li {
+                margin-bottom: 0.5rem;
+            }
+    
+            i {
+                display: inline-block;
+                width: 20px;
+            }
+    
+            span {
+                padding-left: 1rem;
+                font-weight: 500;
+            }
+        }
+    }
+}
