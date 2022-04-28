@@ -1,7 +1,4 @@
 .btn {
     @include btn;
 
-    &:hover {
-        cursor: pointer;
-    }
 }

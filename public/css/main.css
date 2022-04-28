@@ -83,6 +83,7 @@ strong {
 
 .btn:hover {
   cursor: pointer;
+  background: linear-gradient(169deg, #ff93e1 0%, #a16be0 90%);
 }
 
 .styled-break {

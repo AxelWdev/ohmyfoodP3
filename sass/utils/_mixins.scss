@@ -22,6 +22,13 @@
     color: $colour-white;
     background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
     border-radius: 2rem;
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(169deg, rgba(lighten($colour-secondary, 5%) ,1) 0%, rgba(lighten($colour-primary, 5%) ,1) 90%);
+        
+
+    }
    
 
 }
@@ -34,18 +41,13 @@
     background-color: $colour-tertiary;
 }
 
-@mixin media-mobile{
+@mixin media-tablet{
     @media screen and (min-width: 768px) {
         @content;
     }
 }
-@mixin media-tablet {
-    @media screen and (min-width: 1024px) {
-        @content;
-    }
-}
 @mixin media-desktop {
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1024px) {
         @content;
     }
 }
