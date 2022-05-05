@@ -14,24 +14,33 @@
     <title>Oh my food</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="header__logo">
-                <img src="./public/img/ohmyfood.png" alt="">
-            </div>
-            <div class="header-card">
-                <div class="header-card__location">
-                    <i class="fas fa-map-marker-alt"></i><span>Paris, Belleville</span>
-                </div>
-                <div class="header-card__body">
-                    <h2 class="header-card__title">Réservez le menu qui vous convient</h2>
-                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                    <div class="btn">Explorez nos restaurants</div>
-                </div> 
-            </div>
-        </header>
 
-        <main>
+    <div class="loader">
+        <div class="loader__items-container">
+            <div class="loader__item loader__item--1"></div>
+            <div class="loader__item loader__item--2"></div>
+            <div class="loader__item loader__item--3"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header__logo">
+            <img src="./public/img/ohmyfood.png" alt="">
+        </div>
+        <div class="header-card">
+            <div class="header-card__location">
+                <i class="fas fa-map-marker-alt"></i><span>Paris, Belleville</span>
+            </div>
+            <div class="header-card__body">
+                <h2 class="header-card__title">Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <div class="btn">Explorez nos restaurants</div>
+            </div> 
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
             <section class="fonctionnement">
                 <h2 class="fonctionnement__title">Fonctionnement</h2>
                 <div class="fonct-container">
@@ -51,7 +60,7 @@
                             <p>Composez votre menu</p>
                         </div>
                     </div>
-                    <div class="fonct-card fonct-card--active">
+                    <div class="fonct-card">
                         <div class="font-card__number"><span>3</span></div>
                         <div class="fonct-card__pre">
                             <i class="fas fa-store"></i></div>
@@ -61,8 +70,10 @@
                     </div>
                 </div>
             </section>
+        </div>
 
-            <section class="restaurants">
+        <section class="restaurants">
+            <div class="container">
                 <h2>Restaurants</h2>
                 <div class="card-container">
                     <a href="./La_palette_du_gout.html" class="card">
@@ -129,22 +140,25 @@
                         </div>
                     </a>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
 
-        <footer class="footer">
+    <footer class="footer">
+        <div class="container">
             <h3 class="footer__heading">ohmyfood</h3>
             <ul class="footer__list-item">
                 <li><a href="#"><i class='fas fa-utensils'></i><span>Proposer un restaurant</span></a></li>
                 <li><a href="#"><i class='fas fa-hands-helping'></i><span>Devenir Partenaire</span></a></li>
                 <li><a href="#">Mentions légales</a></li>
 
-                <li><a href="mailto:example@example.com">Contact</a></li>
+                <li><a href="mailto:ohmyfood@contact.com">Contact</a></li>
 
-               
+            
 
             </ul>
-        </footer>
-    </div>
+        </div>
+    </footer>
+
 </body>
 </html>
