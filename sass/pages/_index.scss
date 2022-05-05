@@ -129,9 +129,33 @@
 
             i {
                 position: absolute;
-                top: 31px;
-                right: 30px;
+                top: 20px;
+                right: 20px;
             }
+
+            
+            // .icon {
+            //     fill: transparent;
+            //     stroke: $colour-black;
+            //     stroke-width: 30;
+            //     position: absolute;
+            //     top: 20px;
+            //     right: 20px;
+
+            //     path {
+            //         transform-origin: center;
+            //     }
+
+            //     svg {
+            //         overflow: visible;
+            //     }
+
+            //     .heart:hover path {
+            //         animation: heart-fill 0.5s ease-in-out;
+            //         animation-fill-mode: both;
+            //     }
+              
+            // }
     
         }
 

@@ -2,6 +2,7 @@
   100% {
     opacity: 0;
     z-index: -10;
+    display: none;
   }
 }
 
@@ -9,6 +10,7 @@
   100% {
     opacity: 0;
     z-index: -10;
+    display: none;
   }
 }
 
@@ -31,6 +33,38 @@
   100% {
     -webkit-transform: rotate(1turn) scale(1);
             transform: rotate(1turn) scale(1);
+  }
+}
+
+@-webkit-keyframes heart-fill {
+  20% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes heart-fill {
+  20% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -199,6 +233,22 @@ strong {
   background-color: #99E2D0;
   -webkit-animation-delay: 1000ms;
           animation-delay: 1000ms;
+}
+
+.heart-icon .heart-bg {
+  background: linear-gradient(169deg, #ff79da 0%, #9356dc 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.heart-icon .heart-bg:hover, .heart-icon .heart-bg:active {
+  opacity: 1;
+  -webkit-animation: heart-fill 0.5s;
+          animation: heart-fill 0.5s;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -484,8 +534,8 @@ strong {
 
 .restaurants .card__desc i {
   position: absolute;
-  top: 31px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
 }
 
 .nav__link {
@@ -524,9 +574,9 @@ strong {
   position: relative;
 }
 
-.menu-container__heart {
+.menu-container .heart-icon i {
   position: absolute;
-  top: 3rem;
+  top: 2.5rem;
   right: 50px;
 }
 
