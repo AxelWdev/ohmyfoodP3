@@ -46,6 +46,10 @@
 
     .menu {
      
+        margin-top: 2rem;
+        
+     
+        
 
         .menu-card-container {
            max-width: 100%;
@@ -61,7 +65,7 @@
             justify-content: space-between;
         }
         }
-        margin-top: 2rem;
+        
 
         >p {
             text-transform: uppercase;
@@ -77,6 +81,12 @@
             max-width: 100%;
             overflow: hidden;
             box-shadow: $box-shadow;
+
+            animation: appear 1000ms;
+            animation-fill-mode: both;
+            opacity: 0;
+
+            
            
             @include media-desktop {
                 width: 31%;
@@ -185,3 +195,8 @@
     }
 }
     
+@for $i from 1 through 4 {
+    .menu-card:nth-child(#{$i}) {
+        animation-delay: ($i * 0.2s) + 0.15s; 
+    }
+}

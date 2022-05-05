@@ -79,6 +79,32 @@
   }
 }
 
+@-webkit-keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -642,6 +668,11 @@ strong {
   overflow: hidden;
   -webkit-box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
           box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
+  -webkit-animation: appear 1000ms;
+          animation: appear 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  opacity: 0;
 }
 
 @media screen and (min-width: 1024px) {
@@ -759,5 +790,25 @@ strong {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.menu-card:nth-child(1) {
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.menu-card:nth-child(2) {
+  -webkit-animation-delay: 0.55s;
+          animation-delay: 0.55s;
+}
+
+.menu-card:nth-child(3) {
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.menu-card:nth-child(4) {
+  -webkit-animation-delay: 0.95s;
+          animation-delay: 0.95s;
 }
 /*# sourceMappingURL=main.css.map */
