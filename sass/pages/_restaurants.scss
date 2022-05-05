@@ -86,6 +86,10 @@
             animation-fill-mode: both;
             opacity: 0;
 
+            &:hover {
+                cursor: pointer;
+            }
+
             
            
             @include media-desktop {
@@ -144,6 +148,7 @@
 
             &:hover .menu-card__slide { 
                 margin-right: -1rem;
+                
             }
             &:hover .menu-card__wrap-icon {
                
