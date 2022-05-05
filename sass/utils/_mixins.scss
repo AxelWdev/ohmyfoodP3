@@ -20,13 +20,16 @@
     min-width: 200px;
     text-align: center;
     color: $colour-white;
-    background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
+    background-image: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
+    background-color: $colour-white;
     border-radius: 2rem;
-    box-shadow: $box-shadow;
-
-    &:hover {
+    box-shadow: $box-shadow; 
+    transition: all 300ms ease-in-out;
+    
+    &:hover,
+    &:active {
         cursor: pointer;
-        background: linear-gradient(169deg, rgba(lighten($colour-secondary, 5%) ,1) 0%, rgba(lighten($colour-primary, 5%) ,1) 90%);
+        opacity: 0.8;
         box-shadow: $box-shadow-dark;
     }
    
@@ -51,3 +54,4 @@
         @content;
     }
 }
+

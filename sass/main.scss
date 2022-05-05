@@ -2,12 +2,15 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./utils/animations";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
 @import "./components/styled-break";
+@import "./components/loader";
+@import "./components/heart";
 
 @import "./layout/header";
 @import "./layout/footer";

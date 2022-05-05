@@ -18,6 +18,9 @@
             padding: 1rem;
             background: linear-gradient(180deg, rgba($colour-mediumgrey ,0.5) 0%, rgba($colour-grey ,1) 10%);
 
+            span {
+                margin-left: 1rem;
+            }
         }
 
         &__body {

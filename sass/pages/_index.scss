@@ -8,21 +8,15 @@
 
     .fonct-container {
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
-        
-        @include media-tablet {
-            flex-direction: row;
-
-        }
-        
+        flex-wrap: wrap;
     }
 
     .fonct-card {
         display: flex;
         align-items: center;
-        width: 340px;
+        width: 360px;
         max-width: 373px;
         padding: $fonct-padding;
         margin: 0.8rem 1rem; 
@@ -31,7 +25,8 @@
         box-shadow: $box-shadow;
         position: relative;
 
-        &--active {
+        &:hover,
+        &:active {
             background: pastel($colour-primary);
             i {
                 color: $colour-primary;
@@ -66,31 +61,22 @@
     margin: $layout-margin;
     padding: $layout-padding;
     background-color: $colour-lightgrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    @include media-tablet {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 2rem;
         
-        
-            .card-container {
-                 display: grid;
-                 grid-template-columns: 1fr 1fr;
-                 gap: 30px;
-    
-                 .card {
-                    margin: 0;
-                    width: 350px;
-                 } 
-            }
-        
-    
-        
+
+        @include media-desktop {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
 
     h2 {
-        margin-bottom: 1rem;
+
         width: 100%;
     }
 
@@ -98,7 +84,7 @@
         display: flex;
         flex-direction: column;
         min-width: 280px;
-        width: 370px;
+        
         margin: 1rem 0;
         border-radius:1rem; 
         background-color: $colour-white;
@@ -107,8 +93,14 @@
 
         &__header {
             position: relative;
-            @include img-ratio;
+            
             border-radius: 1rem 1rem 0 0;
+             img {
+                 height: 12rem;
+                 width: 100%;
+                 border-radius: 1rem 1rem 0 0;
+                 object-fit: cover;
+             }
 
      
 
@@ -137,9 +129,33 @@
 
             i {
                 position: absolute;
-                top: 31px;
-                right: 30px;
+                top: 20px;
+                right: 20px;
             }
+
+            
+            // .icon {
+            //     fill: transparent;
+            //     stroke: $colour-black;
+            //     stroke-width: 30;
+            //     position: absolute;
+            //     top: 20px;
+            //     right: 20px;
+
+            //     path {
+            //         transform-origin: center;
+            //     }
+
+            //     svg {
+            //         overflow: visible;
+            //     }
+
+            //     .heart:hover path {
+            //         animation: heart-fill 0.5s ease-in-out;
+            //         animation-fill-mode: both;
+            //     }
+              
+            // }
     
         }
 
