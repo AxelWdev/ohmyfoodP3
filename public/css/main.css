@@ -68,6 +68,17 @@
   }
 }
 
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -585,6 +596,9 @@ strong {
 }
 
 .menu-container .menu .menu-card-container {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -592,12 +606,6 @@ strong {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -606,11 +614,12 @@ strong {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -622,52 +631,43 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   background-color: #fff;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1rem;
   border-radius: 1rem;
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
+  overflow: hidden;
   -webkit-box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
           box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container .menu-card {
-    max-width: 600px;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   .menu-container .menu-card {
     max-width: 30%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
 .menu-container .menu-card__desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .menu-container .menu-card__desc h3 {
+  margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
 
 .menu-container .menu-card__desc p {
+  margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -683,7 +683,70 @@ strong {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 10%;
+  padding-left: 0.5rem;
+}
+
+.menu-container .menu-card__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99E2D0;
+  width: 5rem;
+  margin: -1rem -6rem -1rem 1rem;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-transform-origin: right center;
+          transform-origin: right center;
+}
+
+.menu-container .menu-card:hover .menu-card__slide {
+  margin-right: -1rem;
+}
+
+.menu-container .menu-card:hover .menu-card__wrap-icon {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms;
+}
+
+.menu-container .menu-card:active .menu-card__slide {
+  margin-right: -1rem;
+}
+
+.menu-container .menu-card:active .menu-card__wrap-icon {
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+
+.menu-container .menu-card__wrap-icon {
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  padding-top: 2px;
+  border-radius: 20px;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.menu-container .menu-card__icon {
+  color: #99E2D0;
+  padding-top: 0.1rem;
 }
 
 .menu-container .btn-container {
