@@ -2,9 +2,12 @@
 .heart-icon {
 
     .heart-bg {
-        background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);
+        
+        background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);;
         background-clip: text;
+        -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        display: inline-block;
         opacity: 0;
         transition: all 0.5s ease-in-out;
 

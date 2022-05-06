@@ -276,7 +276,9 @@ strong {
 .heart-icon .heart-bg {
   background: linear-gradient(169deg, #ff79da 0%, #9356dc 90%);
   background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: inline-block;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
