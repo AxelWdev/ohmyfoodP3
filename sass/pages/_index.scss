@@ -24,9 +24,11 @@
         border-radius: 1.4rem;
         box-shadow: $box-shadow;
         position: relative;
+        transition: all 300ms;
 
         &:hover,
         &:active {
+            
             background: pastel($colour-primary);
             i {
                 color: $colour-primary;
