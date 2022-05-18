@@ -273,6 +273,14 @@ strong {
           animation-delay: 1000ms;
 }
 
+.heart-icon__cont {
+  position: relative;
+}
+
+.heart-icon i {
+  position: absolute;
+}
+
 .heart-icon .heart-bg {
   background: linear-gradient(169deg, #ff79da 0%, #9356dc 90%);
   background-clip: text;
@@ -592,17 +600,13 @@ strong {
 .header-image {
   overflow: hidden;
   height: 250px;
-  position: relative;
 }
 
 .header-image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: auto;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .restaurant-main {
@@ -615,13 +619,20 @@ strong {
           transform: translateY(-45px);
   background-color: #F6F6F6;
   border-radius: 50px 50px 0 0;
-  position: relative;
 }
 
-.menu-container .heart-icon i {
-  position: absolute;
-  top: 2.5rem;
-  right: 50px;
+.menu-container__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 3rem;
+}
+
+.menu-container__title h1 {
+  font-size: 1.9rem;
 }
 
 .menu-container .menu {
@@ -629,9 +640,8 @@ strong {
 }
 
 .menu-container .menu .menu-card-container {
-  max-width: 100%;
+  width: 100%;
   overflow: hidden;
-  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -672,8 +682,8 @@ strong {
   border-radius: 1rem;
   max-width: 100%;
   overflow: hidden;
-  -webkit-box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
-          box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.3);
+  -webkit-box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.1);
+          box-shadow: 0px 10px 10px rgba(126, 126, 126, 0.1);
   -webkit-animation: appear 1000ms;
           animation: appear 1000ms;
   -webkit-animation-fill-mode: both;

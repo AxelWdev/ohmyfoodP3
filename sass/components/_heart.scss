@@ -1,6 +1,12 @@
 
 .heart-icon {
+    &__cont {
+        position: relative;
+    }
 
+    i {
+        position: absolute;
+    }
     .heart-bg {
         
         background: linear-gradient(169deg, rgba($colour-secondary ,1) 0%, rgba($colour-primary ,1) 90%);;
